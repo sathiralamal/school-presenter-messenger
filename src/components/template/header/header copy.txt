@@ -1,0 +1,221 @@
+import React, { useEffect, useState } from "react";
+import { Storage } from '@ionic/storage';
+import {
+  Avatar,
+  Button,
+  Dropdown,
+  Icon,
+  IconButton,
+  Drawer,
+  Modal,
+  Nav,
+  Navbar,
+} from "rsuite";
+import { NavLink } from "react-router-dom";
+import ProfilePage from '../../../pages/profile/profile-page';
+
+//import AppInstallPopup from '../app-install-popup/app-install-popup';
+//import NotificationPopup from '../notification-popup/notification-popup';
+import "./header.css";
+
+//redux
+import { connect } from "react-redux";
+import {classesSetData} from "../../../stores/classes/actions";
+import {gradeSetData} from "../../../stores/grades/actions";
+import {conversationsSetData} from "../../../stores/messages/actions";
+import {contactsResetContacts} from "../../../stores/contacts/actions";
+
+const Header: React.FC<{
+  classesSetData: Function;
+  gradeSetData: Function;
+  conversationsSetData: Function;
+  contactsResetContacts: Function;
+}> = ({ classesSetData, gradeSetData, conversationsSetData, contactsResetContacts }) => {
+  const [mobile, setMobile] = useState(window.innerWidth < 992);
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [showModal2, setShowModal2] = useState<boolean>(false);
+  const [showProfile, setShowProfile] = useState<boolean>(false)
+  const [showHowTo, setShowHowTo] = useState<boolean>(false)
+
+  const toggleModal = (flag = false) => {
+    setShowModal(flag);
+  };
+
+  const toggleModal2 = (flag = false) => {
+    setShowModal2(flag);
+  };
+<<<<<<< HEAD
+
+  const goTo = (url: string) => {
+    console.log("goTo : ", url);
+  }
+
+=======
+  const handleLogout = async() =>{
+    const store = new Storage();
+    await store.create();
+    store.clear();
+    classesSetData([])
+    gradeSetData([])
+    conversationsSetData([])
+    contactsResetContacts();
+  }
+>>>>>>> 8f7452b73318bc0188ddee67780f2c3c7045d40b
+  useEffect(() => {}, [mobile, window.innerWidth]);
+  return (
+    <>
+      <Navbar>
+        <Navbar.Header>
+          <img className="navbar-brand logo" src="assets/logo.png" alt="logo" />
+          {mobile && <Icon icon="ellipsis-v" size="lg" />}
+        </Navbar.Header>
+        <Navbar.Body>
+          <Nav pullRight>
+            <Nav.Item>
+              <NavLink className='navLink' to="/dashboard">
+                <div
+                  onClick={() => toggleModal(true)}
+                  className="menu-item-inner"
+                >
+                  <Icon size="lg" icon="th-large" />
+                  <span>Dashboard</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink className='navLink' to="/contacts">
+                <div
+                  onClick={() => toggleModal2(true)}
+                  className="menu-item-inner"
+                >
+                  <Icon size="lg" icon="id-badge" />
+                  <span>Contacts</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink className='navLink' to="/groups">
+                <div className="menu-item-inner">
+                  <Icon size="lg" icon="group" />
+                  <span>Groups</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink className='navLink' to="/messaging">
+                <div className="menu-item-inner">
+                  <Icon size="lg" icon="wechat" />
+                  <span>Messaging</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink className='navLink' to="/calendar">
+                <div className="menu-item-inner">
+                  <Icon size="lg" icon="calendar" />
+                  <span>Calendar</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink className='navLink' to="/polls">
+                <div className="menu-item-inner">
+                  <Icon size="lg" icon="trello" />
+                  <span>Polls</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+<<<<<<< HEAD
+            
+            <Dropdown className='menu-dropdown' placement="bottomEnd" renderTitle={() => {
+                            return <div className='menu-item-inner'><IconButton color='green' appearance="primary" icon={<Icon icon="user" />} circle /></div>;
+                        }}>
+                            {
+                                !mobile &&
+                                <Dropdown.Item className='close-profile' onSelect={() => setShowProfile(!showProfile)}>
+                                    <Icon className='text-green' icon="user" />&nbsp;
+                                    <span className='text-green'>My Profile</span>
+                                </Dropdown.Item>
+                            }
+                            {
+                                mobile &&
+                                <Dropdown.Item onClick={() => goTo('/profile')}>
+                                    <Icon className='text-green' icon="user" />&nbsp;
+                                    <span className='text-green'>My Profile</span>
+                                </Dropdown.Item>
+                            }
+                            <Dropdown.Item>
+                                <Icon className='text-green' icon="trello" />&nbsp;
+                                <span className='text-green'>Polls</span>
+                            </Dropdown.Item>
+                            <Dropdown.Item onClick={() => setShowHowTo(true)}>
+                                <Icon className='text-green' icon="support" />&nbsp;
+                                <span className='text-green'>How To</span>
+                            </Dropdown.Item>
+                            <Dropdown.Item>
+                                <Icon className='text-green' size="lg" icon="sign-out" />
+                                <span className='text-green'>Logout</span>
+                            </Dropdown.Item>
+                        </Dropdown>
+=======
+            <Nav.Item>
+              <NavLink className='navLink' to="/" onClick={()=>handleLogout()}>
+                <div className="menu-item-inner">
+                  <Icon size="lg" icon="sign-out" />
+                  <span>Logout</span>
+                </div>
+              </NavLink>
+            </Nav.Item>
+>>>>>>> 8f7452b73318bc0188ddee67780f2c3c7045d40b
+          </Nav>
+        </Navbar.Body>
+      </Navbar>
+      <Modal size="xs" show={showModal} onHide={() => toggleModal(false)}>
+                <Modal.Body className='ion-no-padding modal-no-margin'>
+                    {/* <AppInstallPopup /> */}
+                </Modal.Body>
+            </Modal>
+            <Modal size="xs" show={showModal2} onHide={() => toggleModal2(false)}>
+                <Modal.Body className='ion-no-padding modal-no-margin'>
+                    {/* <NotificationPopup /> */}
+                </Modal.Body>
+            </Modal>
+            <Drawer
+                size='xs'
+                show={showProfile}
+                onHide={() => setShowProfile(false)}
+            >
+                <div className='profile-modal'>
+                    <ProfilePage setShow={setShowProfile} size='web' type='profile' title='My Profile' />
+                </div>
+            </Drawer>
+            <Drawer
+                size='xs'
+                show={showHowTo}
+                onHide={() => setShowHowTo(false)}
+            >
+                <div className='profile-modal'>
+                    <ProfilePage setShow={setShowHowTo} size='web' type='howTo' title='How to' />
+                </div>
+            </Drawer>
+      {/* <Modal size="xs" show={showModal} onHide={() => toggleModal(false)}>
+                <Modal.Body className='ion-no-padding modal-no-margin'>
+                    <AppInstallPopup />
+                </Modal.Body>
+            </Modal>
+            <Modal size="xs" show={showModal2} onHide={() => toggleModal2(false)}>
+                <Modal.Body className='ion-no-padding modal-no-margin'>
+                    <NotificationPopup />
+                </Modal.Body>
+            </Modal> */}
+    </>
+  );
+};
+const mapStateToProps = (state: any) => ({});
+const mapDispatchToProps = {
+  classesSetData,
+  gradeSetData,
+  conversationsSetData,
+  contactsResetContacts
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

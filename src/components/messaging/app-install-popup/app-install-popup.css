@@ -1,0 +1,20 @@
+.app-install-popup .texture{
+    font-size: 14px;
+    color: #777;
+}
+.app-install-popup .label{
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: #219653;
+    font-weight: bold;
+}
+.app-install-popup .store-img{
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.app-install-popup .store-img img{
+    height: 50px;
+}

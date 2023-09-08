@@ -1,0 +1,46 @@
+.newLearnerGroup {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  top: 60px;
+  left: 30%;
+  flex-direction: column;
+  width: 550px;
+}
+
+.PopupLable {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 2px;
+  color: #0006;
+}
+.PopupInputPicker.rs-picker-default .rs-picker-toggle.rs-btn {
+  background-color: #219653 !important;
+  color: #fff !important;
+}
+.PopupInputPicker .rs-picker-toggle .rs-picker-toggle-placeholder {
+  color: #fff !important;
+}
+.btn-green-popup {
+  color: #fff;
+  font-size: 0.7rem;
+  --background: #219653;
+  --padding: 0px 5px;
+  --border-radius: 0 0.25rem 0.25rem 0;
+  margin: 0;
+  vertical-align: top;
+  height: 40px;
+  height: 27px !important;
+  margin: 4px;
+  border-radius: 3px !important;
+  overflow: hidden;
+}
+.btn-red-popup {
+  background: #FF0000 !important;
+}
+.devider {
+  padding: 15px 0 0;
+  margin: 10px 0;
+  border-top: 1px solid #219653;
+}

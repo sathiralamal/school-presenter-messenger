@@ -1,0 +1,68 @@
+ion-content{
+    --background:#fff;
+}
+ion-slides {
+    height: 80%;
+  }
+
+.button-solid {
+    --background: #219653;
+    --color: var(--ion-color-primary-contrast, #fff);
+}
+.modal-wrapper {
+    position: absolute !important;
+    width: 60vw !important;
+    height: 70% !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+}
+
+
+.modal .backdrop {
+    display: block !important;
+}
+.toolbar-container {
+    background-color: #ffff
+}
+ion-col, ion-row {
+    color: #219653;
+    font-family: arial;
+    align-items: center;
+}
+.ion-footer {
+    display: block;
+    position: relative;
+    -ms-flex-order: 1;
+    width: 100%;
+    z-index: 10;
+    align: center;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    justify-content: centre;
+    align-items: centre;
+    padding-right: 50px;
+    padding-left: 50px
+}
+
+.ion-footer-center {
+    display: block;
+    position: relative;
+    -ms-flex-order: 1;
+    width: 100%;
+    z-index: 10;
+    align: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    justify-content: centre;
+    align-items: centre;
+    ;
+}
+disabled-button-solid {
+    --background: #808582;
+    --color: var(--ion-color-primary-contrast, #fff);
+}

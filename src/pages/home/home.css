@@ -1,0 +1,26 @@
+.register-page.web{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.register-page.mobile{
+    padding: 30px 15px;
+    height: 70vh;
+    overflow-y: auto;
+}
+.brand-container{
+    text-align: center;
+    color: #219653;
+    font-size: 25px;
+}
+.brand-container img{
+    margin-bottom: 10px;
+}
+.tag-line{
+    margin-top: 50px;
+    text-align: center;
+    color: #aaa;
+    font-size: 20px;
+}

@@ -1,0 +1,191 @@
+.groupBodyMain {
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.alert-wrapper {
+  min-width: 370px !important;
+}
+@media only Screen and (max-width: 500px) {
+  .groupBodyMain {
+    margin-top: 7px;
+  }
+
+  .groupMainShadow {
+    border: 1px solid #219653;
+    border-radius: 7px;
+  }
+}
+
+.groupBody {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+.groupBodyBorder {
+  border: 1px solid #219653;
+  background: #fff;
+  z-index: 99;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupBody {
+    border: none;
+  }
+
+  .groupBodyShadow {
+    border: 1px solid #ddd;
+  }
+
+  .groupCheck {
+    display: none;
+  }
+}
+
+.groupBodyText {
+  color: #219653 !important;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.groupNumbers {
+  background-color: #3880ff;
+  padding: 4px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupBodyText {
+    margin-left: 0;
+    word-break: keep-all;
+    /* white-space: nowrap; */
+    width: 68vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold !important;
+  }
+
+  .groupNumbers {
+    background-color: #fff;
+    border: 1px solid #3880ff;
+    padding: 2px;
+    color: #3880ff;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-size: 12px;
+    /* margin: 20px 0; */
+  }
+}
+
+.groupBodyDown {
+  vertical-align: middle;
+  margin-top: 10px;
+  color: #000;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupBodyDown {
+    margin-top: 18px;
+  }
+}
+
+.btnGroupChat {
+  margin: 0;
+  margin-left: auto;
+  margin-top: 12px;
+  --border-radius: 0.3rem 0 0 0.3rem;
+  height: 30px;
+}
+
+.btnGroupTrash {
+  margin: 0;
+  margin-top: 12px;
+  --border-radius: 0;
+  height: 30px;
+}
+
+.btnGroupPencil {
+  margin: 0;
+  margin-top: 12px;
+  margin-right: 15px;
+  --border-radius: 0 0.3rem 0.3rem 0;
+  height: 30px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .btnGroupChat,
+  .btnGroupTrash,
+  .btnGroupPencil {
+    margin-top: 9px;
+  }
+
+  /* .btnGroupChat .button-native,
+  .btnGroupTrash .button-native,
+  .btnGroupPencil .button-native {
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+  } */
+}
+
+.groupNumber {
+  display: none;
+  margin: 10px 20px;
+  border: 1px solid #219653;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #219653;
+}
+.groupNumber2 {
+  display: none;
+  margin: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+@media only Screen and (max-width: 500px) {
+  .groupNumberOpen {
+    display: block;
+  }
+
+  .groupNumberClose {
+    display: none;
+  }
+}
+
+.desk-only {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .desk-only {
+    display: none;
+  }
+}
+
+.mob-only {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mob-only {
+    display: block;
+  }
+}
+
+.bttn {
+  --border-width: 1px;
+  --border-color: #21965300;
+}
+
+.groupBodyMain .rs-dropdown-open.rs-dropdown-placement-top-start > .rs-dropdown-menu,
+.groupBodyMain .rs-dropdown-open.rs-dropdown-placement-bottom-start > .rs-dropdown-menu {
+  left: -90px;
+}

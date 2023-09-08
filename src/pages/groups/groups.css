@@ -1,0 +1,183 @@
+.searchBar {
+  margin: 30px 0;
+  position: relative;
+  overflow: visible;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  /*width: 200px*/
+}
+
+@media only Screen and (max-width: 500px) {
+  .searchBar {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 15px 0;
+  }
+}
+
+.searchBar .search {
+  height: fit-content;
+  border: 1px solid #219653;
+  border-radius: 0.25rem;
+  --padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #219653 !important;
+  position: relative;
+}
+
+.searchSuggestions {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  padding: 5px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #aaa5;
+  z-index: 99999;
+}
+
+.searchSuggestionsItems {
+  color: #222a;
+  width: 100%;
+  padding: 5px 0px;
+  border-bottom: 1px solid #aaa3;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only Screen and (max-width: 500px) {
+  .searchBar .search {
+    margin: 4px 0;
+  }
+}
+
+.searchBar .search input {
+  border: none;
+  padding: 7.5px;
+  color: #219653;
+  height: 40px;
+}
+
+.searchBar .search input::placeholder {
+  color: #219653 !important;
+}
+
+.searchBar .search input:focus-visible {
+  outline: none;
+}
+
+@media only Screen and (max-width: 500px) {
+  .aboveTableSelect {
+    width: 148px;
+  }
+
+  .searchBar .search input {
+    width: 155px;
+    padding-left: 1px;
+  }
+}
+
+.search-input {
+  width: 300px;
+}
+
+@media only Screen and (max-width: 400px) {
+  .aboveTableSelect {
+    width: 115px;
+  }
+
+  .searchBar .search input {
+    width: 115px;
+  }
+
+  .search-input {
+    width: 100px;
+  }
+}
+
+
+@media only Screen and (max-width: 500px) {
+  .btn-addGroup {
+    width: 150px;
+    height: 48px
+  }
+}
+
+@media only Screen and (max-width: 400px) {
+  .btn-addGroup {
+    width: 150px;
+  }
+}
+
+.btn-addGroup ion-text {
+  color: #219653 !important;
+  margin: 20px;
+}
+
+.TextGreen {
+  color: #219653 !important;
+}
+
+.textBold {
+  font-weight: 600;
+}
+
+.btn-trash {
+  margin-right: 20px;
+  --border-radius: 0;
+  height: 40px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .btn-trash {
+    display: none;
+  }
+}
+
+.groupMain {
+  flex-direction: column;
+  /* position: relative; */
+  overflow: visible;
+  height: calc(100vh - 335px);
+  overflow-y: auto;
+}
+
+.groupHead {
+  width: 100%;
+  color: #219653;
+  font-weight: bold;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  /* box-shadow: 0 5px 10px #dedede; */
+  margin-bottom: 1px;
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupHead {
+    display: none;
+    margin-bottom: 0px;
+  }
+}
+
+.groupBodyCover {
+  width: 100%;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .groupBodyCover {
+    padding: 0 7px;
+  }
+}
+
+.item:hover .item-native {
+  color: #219653 !important;
+}

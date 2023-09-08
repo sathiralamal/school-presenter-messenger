@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Scholar Present</string>
+    <string name="title_activity_main">Scholar Present</string>
+    <string name="package_name">iconnect99.message.scholarpresent</string>
+    <string name="custom_url_scheme">iconnect99.message.scholarpresent</string>
+</resources>

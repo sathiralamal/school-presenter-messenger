@@ -1,0 +1,3 @@
+export const ROLES_LOADING = "ROLES_LOADING";
+export const ROLES_SET_DATA = "ROLES_SET_DATA";
+export const ROLES_RESET = "ROLES_RESET";

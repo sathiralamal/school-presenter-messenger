@@ -1,0 +1,103 @@
+.sendInvitations {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  border-radius: 5px;
+  top: 60px;
+  left: 30%;
+  width: 550px;
+  padding: 20px 0;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitations {
+    width: 90vw;
+    left: 0;
+  }
+}
+
+.sendInvitationsHead {
+  color: #219653 !important;
+  font-size: 21px;
+}
+
+.sendInvitationsImg {
+  width: 130px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitationsImg {
+    width: 80px;
+  }
+}
+
+.sendInvitationsBodyHead {
+  color: #219653 !important;
+  font-size: 21px;
+  width: 346px;
+  margin-left: 20px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitationsBodyHead {
+    width: calc(75vw - 80px);
+    font-size: 13px;
+  }
+}
+
+.sendInvitationsBody {
+  width: 346px;
+  flex-direction: column;
+  margin: 0 20px -10px;
+  position: relative;
+  left: 130px;
+  bottom: 33px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitationsBody {
+    left: 0;
+    bottom: 0;
+    margin: 0 0 20px 20px;
+    width: 250px;
+  }
+}
+
+.sendInvitationsBodyMid {
+  color: #bf0000 !important;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.sendInvitationsBody * {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitationsBody * {
+    font-size: 12px;
+  }
+}
+
+.sendInvitationsBox {
+  width: 440px;
+  flex-direction: column;
+  padding: 15px 30px;
+  border: 2px solid #21965333;
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitationsBox {
+    width: 75vw;
+    padding: 10px 5px;
+  }
+}
+
+.sendInvitationsBox * {
+  font-size: 13px;
+}

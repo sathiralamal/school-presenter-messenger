@@ -1,0 +1,100 @@
+.message-options{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all .3s ease-out;
+    display: none;
+}
+.message:hover .message-options,.message:focus .message-options{
+    display: block;
+}
+.broadcast-message{
+    padding-bottom: 40px !important;
+}
+.media-message{
+    /* background: transparent; */
+    /* justify-content: flex-end; */
+}
+/* .media-message.sent  .timebox{
+    color: var(--ion-color-primary);
+}
+.media-message.received  .timebox{
+    color: #999;
+} */
+/* .media-message.sent::before{
+    display: none;
+}
+.media-message.received::after{
+    display: none;
+} */
+.imagePreview{
+    text-align: center;
+}
+.pdf-options{
+    display: flex;
+}
+.pdf-options .rs-btn:first-child{
+    margin-right: 5px;
+}
+/* .media-message .message-options .rs-icon-ellipsis-v{
+    color: #219653;
+    font-size: 25px;
+} */
+.broadcastReceived{
+    width: 100%;
+    max-width: 100% !important;
+    border: 1px solid #ccc;
+    padding: 10px !important;
+}
+.broadcastReceived > div{
+    width: 100%;
+}
+.broadcastReceived .rs-avatar{
+    position: relative;
+    margin-right: 10px;
+}
+.broadcastReceived .broadcast-msg-parent{
+    width: 100%;
+}
+.broadcastReceived .broadcast-msg-parent .header-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.broadcastReceived .broadcast-msg-parent .header-bar .role{
+    margin-left: 15px;
+}
+.broadcastReceived .broadcast-msg-parent .user{
+    display: flex;
+    align-items: center;
+}
+.broadcastReceived .broadcast-msg-parent .name{
+    font-size: 14px;
+    font-weight: normal;
+}
+.broadcastReceived .broadcast-msg-parent .content{
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 15px;
+    white-space: break-word;
+}
+.count {
+    color: rgba(14, 13, 13, 0.933);
+    /* font-size: 10px; */
+    vertical-align: sub;
+    font-size: small;
+}
+.broadcastReceived .broadcast-msg-parent .content .ratings *{
+    margin-right: 5px;
+}
+.broadcastReceived .broadcast-msg-parent .content .ratings *:nth-child(2n){
+    margin-right: 20px;
+}
+.btn-ctrls{
+    padding: 10px 15px 0;
+    border-top: 1px solid #ccc;
+}
+.btn-ctrls .like-button{
+    margin-right: 15px;
+}

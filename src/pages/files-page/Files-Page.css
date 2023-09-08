@@ -1,0 +1,42 @@
+.files-page{
+    background-color:#fff;
+    min-height: calc(100vh - 70px);
+    padding: 30px 15px 70px;
+}
+.recent-file-container{
+    display: flex;
+}
+.file-container {
+    margin-right: 10px;
+}
+.top-bar{
+    display: flex;
+}
+.heading{
+    color: #777;
+    font-size: 17px;
+    margin: 20px 0;
+}
+.top-bar .search-input{
+    width: 250px;
+    max-width: 80%;
+    margin-right: 20px;
+}
+.file-panel{
+    margin-bottom: 10px;
+}
+.panel-title{
+    color: var(--ion-color-success);
+    font-weight: bold;
+}
+.panel-title .rs-icon {
+    margin-right: 5px;
+}
+.rs-table-cell-content{
+    color : #999;
+}
+
+.rs-checkbox-wrapper{
+    position: inherit;
+    top: 0;
+}

@@ -1,0 +1,276 @@
+.rs-register-modal {
+    position: fixed;
+    overflow: auto;
+    z-index: 1050;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.login-component {
+    text-align: center;
+}
+
+.school-register-component {
+    align: center;
+    /* width: 70%; */
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
+    display: flex;
+    top: 20%;
+    left: 30%;
+    position: absolute;
+    justify-content: centre;
+    align-items: centre;
+}
+.md body {
+    --ion-text-color: 11ee1e;
+}
+.login-component .title {
+    font-size: 20px;
+    color: #219653;
+    margin-bottom: 10px;
+}
+.login-component label {
+    color: #219653;
+    margin-bottom: 40px;
+    display: block;
+    padding-top: 10px;
+}
+.login-component .rs-input-group {
+    width: 350px;
+    margin: auto;
+}
+.login-component .terms {
+    margin-bottom: 10px;
+}
+.rs-modal-body {
+    padding-bottom: 0;
+}
+.otp-component {
+    text-align: center;
+}
+.otp-component .title {
+    font-size: 20px;
+    color: #219653;
+    margin-bottom: 5px;
+}
+.otp-component .sub-title {
+    font-size: 14px;
+    color: #219653;
+    margin-bottom: 15px;
+}
+.otp-component .rs-input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    width: 300px;
+    margin: 0 auto 20px;
+}
+.otp-component .btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+.type-component {
+    display: flex;
+    justify-content: space-around;
+}
+.type-component img {
+    width: 30%;
+    cursor: pointer;
+}
+.form-field {
+    margin-bottom: 15px;
+}
+.img-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 210px;
+}
+.aside-image {
+    width: 200px;
+    max-width: 100%;
+}
+.form-title {
+    color: #219653;
+    margin: 23px 0;
+}
+.confirm-component .box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.confirm-component .sub-title {
+    color: #219653;
+    margin-bottom: 15px;
+}
+.text-green {
+    color: #219653;
+}
+.done-component {
+    text-align: center;
+    min-height: 80vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.done-component .sub-title.ion-margin {
+    margin: 0 auto 25px;
+}
+.profile {
+    position: relative;
+    display: inline-block;
+}
+.profile .aside-image {
+    border-radius: 50%;
+}
+.profile .add {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    height: 70px;
+}
+
+.radioGroupLabel {
+    padding: 8px 2px 8px 10px;
+    display: inline-block;
+}
+.ion-color-light {
+    --ion-color-base: #f2f2f2 !important;
+    --ion-color-contrast: #219653 !important;
+}
+
+.btn-green-popup {
+    background: #219653 !important;
+}
+.btn-red-popup {
+    background: #FF0000 !important;
+  }
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: #219653;
+}
+
+.otp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.otp-input {
+    border: none;
+    border-bottom: solid 1px rgb(179, 179, 179);
+    font-size: 16px;
+    margin: 0px 5px;
+    width: 30px !important;
+}
+
+.otp-input-focus {
+    outline: none;
+}
+
+.confirm-child {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.confirm-child-cover {
+    min-height: 40vh;
+    width: auto;
+    object-fit: contain;
+}
+
+.parent-info {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.parent-info-container {
+    max-width: 500px;
+}
+
+.parent-info > div {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.parent-info-form-container {
+    display: flex;
+}
+.img-block {
+    display: flex;
+
+    max-width: 300px;
+    margin-left: 40px;
+}
+.reset-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+
+.parent-info-btn {
+    box-shadow: none !important;
+}
+
+.request-form-container {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-form-container > div {
+    max-width: 1000px;
+}
+.request-form {
+    display: flex;
+}
+
+.request-form > div {
+    width: 100%;
+    padding: 20px;
+}
+
+.school-picker {
+    width: 100% !important;
+}
+.no-border {
+    border: none;
+}
+
+.parent-info-submit{
+    padding: 20px;
+}
+
+@media all and (max-width: 600px) {
+    .parent-info-form-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .img-block {
+        padding: 20px;
+        margin: 0;
+    }
+    .parent-info {
+        min-height: unset;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .request-form {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,94 @@
+.register-mobile{
+    height: 100vh;
+    overflow-y: auto;
+}
+.login-component{
+    text-align: center;
+}
+.login-component .title{
+    font-size: 20px;
+    color: #219653;
+    margin-bottom: 10px;
+}
+.login-component label{
+    color: #219653;
+    margin-bottom: 40px;
+    display: block;
+}
+.login-component .rs-input-group{
+    width: 350px;
+    margin: auto;
+}
+.login-component .terms{
+    margin-bottom: 10px;
+}
+.rs-modal-body{
+    padding-bottom: 0;
+}
+.otp-component{
+    text-align: center;
+}
+.otp-component .title{
+    font-size: 20px;
+    color: #219653;
+    margin-bottom: 5px;
+}
+.otp-component .sub-title{
+    font-size: 14px;
+    color: #219653;
+    margin-bottom: 15px;
+}
+.otp-component .rs-input{
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    width: 300px;
+    margin: 0 auto 20px;
+}
+.otp-component .btn-container{
+    display: flex;
+    justify-content: space-around;
+}
+.type-component{
+    display: flex;
+    justify-content: space-between;
+}
+.type-component img{
+    width: 30%;
+    cursor: pointer;
+}
+.form-field{
+    margin-bottom: 15px;
+}
+.img-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 210px;
+}
+.aside-image{
+    width: 200px;
+    max-width: 100%;
+}
+.form-title{
+    color: #219653;
+    margin: 23px 0;
+}
+.confirm-component .box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.confirm-component .sub-title{
+    color: #219653;
+    margin-bottom: 15px;
+}
+.text-green{
+    color: #219653;
+}
+.done-component{
+    text-align: center;
+}
+.done-component .sub-title.ion-margin{
+    margin: 0 auto 25px
+}

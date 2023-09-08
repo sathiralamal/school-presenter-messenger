@@ -1,0 +1,173 @@
+.contactTable {
+    margin-bottom: 20px;
+    /* margin-top: 130px; */
+}
+.rs-picker-value-count {
+    background-color: transparent !important;
+}
+.rs-picker-value-item {
+    color: #219653 !important;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: -6px;
+}
+.table-head {
+    color: #219653;
+    border-top: 1px solid #bbb;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0 1px 1px #dedede;
+}
+
+.table-head .rs-flex-box-grid-item {
+    padding: 5px 10px;
+}
+
+.contactTable .size-0-5 {
+    width: 110px;
+}
+
+.contactTable .size-1 {
+    width: 122px;
+}
+
+.contactTable .size-1 {
+    width: 122px;
+}
+
+.contactTable .size-1-5 {
+    width: 177px;
+}
+
+.contactTable .size-2 {
+    width: 210px;
+}
+
+.contactTable .size-4 {
+    width: 385px;
+}
+
+.col-row {
+    font-size: 20px;
+}
+
+/* @media only screen and (min-width: 1440px) {
+  .col-row {
+    font-size: 22px;
+  }
+} */
+
+@media only screen and (max-width: 575px) {
+    .table-head {
+        display: none !important;
+    }
+}
+
+.green-text {
+    color: #219653 !important;
+}
+
+.contact-col-2 {
+    flex: 2;
+}
+
+.contact-col-1 {
+    flex: 1;
+}
+
+.contact-col-3 {
+    flex: 4;
+}
+
+.CustDrop {
+    width: 90px;
+}
+
+.CustDrop .rs-picker-toggle .rs-picker-toggle-placeholder {
+    color: #219653 !important;
+    font-size: 20px;
+    display: block;
+    margin-top: -6px;
+    padding-right: 0px !important;
+}
+
+.CustDrop .rs-btn .rs-btn-default .rs-picker-toggle {
+    background-color: #219653;
+    padding-right: 0px !important;
+}
+
+.CustDrop > a {
+    padding-left: 0px;
+    padding-right: 0px !important;
+}
+
+.name-column {
+    width: 15%;
+}
+
+.surname-width {
+    width: 10%;
+}
+
+.grade-column {
+    width: 8%;
+}
+
+.class-column {
+    width: 8%;
+}
+
+.phone-column {
+    width: 10%;
+}
+
+.email-column {
+    width: 12%;
+}
+
+.total-column {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.basic-userinfo-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.basic-userinfo-component {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+}
+.input-full-width {
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .name-column {
+        width: 15%;
+    }
+
+    .surname-width {
+        width: 15%;
+    }
+
+    .grade-column {
+        width: 15%;
+    }
+
+    .class-column {
+        width: 15%;
+    }
+
+    .phone-column {
+        width: 15%;
+    }
+
+    .total-column {
+        text-align: start;
+    }
+}

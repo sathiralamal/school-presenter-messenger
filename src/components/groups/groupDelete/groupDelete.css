@@ -1,0 +1,34 @@
+.groupDelete {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  border-radius: 5px;
+  top: 50px;
+  right: 120px;
+  width: 400px;
+  padding: 20px 0;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupDelete {
+    right: 0;
+    font-size: 13px;
+    width: 90vw;
+    top: 40px;
+  }
+}
+
+.btn-red-delete {
+  --background: #bf0000;
+}
+
+.groupDeleteText {
+  width: 280px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupDeleteText {
+    width: 200px;
+  }
+}

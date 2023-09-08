@@ -1,0 +1,38 @@
+.reply-chat-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.reply-chat-box{
+    width: 400px; 
+    border: none;
+}
+.bell-icon ul {
+    border-bottom: 6px solid #4cb04f;
+}
+.cursor-pointer {
+    cursor:  pointer !important;
+}
+.err-text{
+    margin-left: 10px;
+    color: #f00;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+.recordingListReply{
+    position: absolute;
+    left: 0px;
+    right: -6px;
+    bottom: -44px;
+    margin: auto;
+    width: 407px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

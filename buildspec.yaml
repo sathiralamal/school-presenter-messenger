@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - aws codeartifact login --tool npm --repository scholarpresent-npm --domain scholarpresent --domain-owner 612788056814 --region eu-central-1
+      - npm install
+  build:
+    commands:
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: build

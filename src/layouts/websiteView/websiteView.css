@@ -1,0 +1,72 @@
+.mainView-Content {
+  --background: #fff !important;
+  /* --padding-top: calc(var(--padding-top) + var(--offset-top)); */
+  color: #111 !important;
+}
+
+ion-text {
+  color: #222 !important;
+}
+
+ion-item {
+  --background: #fff !important;
+}
+
+input {
+  background-color: #fff !important;
+}
+
+ion-checkbox {
+  --background: #fff;
+}
+
+ion-checkbox.md {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  /* overflow: hidden; */
+}
+
+ion-checkbox.md .checkbox-icon{
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  /* overflow: hidden; */
+}
+
+ion-checkbox .checkbox-icon,
+ion-checkbox .checkbox-icon {
+  border-width: 1px;
+  border-color: #aaa !important;
+}
+
+ion-label {
+  --color: #222 !important;
+}
+
+ion-col,
+ion-row {
+  color: #222;
+}
+
+.ion-color-light {
+  --ion-color-base: #f2f2f2 !important;
+  --ion-color-contrast: #219653 !important;
+}
+
+.btn-green-popup {
+  background: #219653 !important;
+}
+
+.btn-red-popup {
+  background: #FF0000 !important;
+}
+.navbar-light .navbar-brand {
+  color: rgba(0,0,0,.9);
+}
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}

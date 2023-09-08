@@ -1,0 +1,7 @@
+{
+  "name": "IConnectMessaging",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

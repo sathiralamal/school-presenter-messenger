@@ -1,0 +1,196 @@
+.rs-navbar {
+    align-items: center;
+}
+
+.profile-modal {
+    background-color: #fff;
+}
+.long-modal {
+
+    background-color: #fff;
+
+}
+
+
+.profile-drawer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.rs-navbar-header {
+    height: 50% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.rs-btn-subtle {
+    transition: color 0.2s linear, background-color 0.3s linear;
+    color: #fff;
+    background-color: #28a745;
+}
+.header-icon {
+    padding: 10px;
+}
+
+.rs-navbar.rs-navbar-default {
+    background-color: rgb(255, 255, 255);
+}
+.rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content {
+    color: grey;
+}
+.rs-dropdown-menu {
+    background-color: #ffff;
+    z-index: 9999 !important;
+}
+#nav ul {
+    z-index: 9999 !important;
+}
+.rs-btn-subtle a {
+    background-color: transparent;
+    color: var(--ion-color-primary, rgb(128, 128, 128));
+}
+
+.rs-navbar.rs-navbar-default .rs-nav-item > .rs-nav-item-content {
+    color: #219653;
+}
+.rs-nav .rs-nav-item-active > .rs-nav-item-content {
+    background-color: rgb(128, 128, 128);
+}
+rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content::before {
+    background-color: rgb(128, 128, 128);
+}
+.rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content:focus {
+    color: rgb(128, 128, 128);
+}
+rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content:active {
+    background-color: rgb(128, 128, 128);
+}
+rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content::after {
+    background-color: rgb(128, 128, 128);
+}
+.rs-nav-subtle.rs-nav-horizontal .rs-nav-item > .rs-nav-item-content::before {
+    background-color: rgb(128, 128, 128);
+}
+.rs-nav-subtle.rs-nav-horizontal .rs-nav-item > .rs-nav-item-content:before,
+rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content:active,
+rs-navbar.rs-navbar-default .rs-nav-item-active > .rs-nav-item-content:after {
+    background-color: grey;
+}
+
+.logo-icon {
+    width: 150px;
+    object-fit: contain;
+}
+
+.navbar-profile-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar-profile-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-container {
+    padding: 0 10px;
+}
+
+.rs-navbar-nav .rs-nav-item > .rs-nav-item-content {
+    height: 100% !important;
+}
+
+.navLink {
+    text-decoration: none !important;
+}
+
+.navLink.active .rs-icon {
+    color: #000 !important;
+}
+
+.navLink.active span {
+    color: #000 !important;
+}
+
+.navLink.active .menu-item-inner {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.navLink span {
+    color: #219653 !important;
+}
+
+.navLink .menu-item-inner {
+    border-bottom: 2px solid #0000;
+    padding-bottom: 10px;
+}
+
+.menu-item-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #219653;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-item-inner .rs-icon {
+    margin-bottom: 10px;
+}
+
+.rs-nav-item-active .menu-item-inner {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.modal-no-margin {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+@media all and (max-width: 992px) {
+    .rs-navbar-nav.rs-navbar-right {
+        float: none;
+        width: 100%;
+    }
+
+    .menu-item-inner {
+        font-size: 10px;
+    }
+
+    .rs-navbar-header {
+        float: none !important;
+
+        color: #219653;
+    }
+    .rs-navbar-header img {
+        height: 35px !important;
+    }
+
+    .logo-icon {
+        height: 100%;
+        width: auto;
+    }
+
+    .navbar-icon {
+        font-size: 20px !important;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .navbar-icon {
+        font-size: 16px !important;
+    }
+    .rs-nav-item-content {
+        padding-left: 0px !important;
+        padding-right: 5px !important;
+    }
+
+    .profile-drawer {
+        max-width: 100vw;
+    }
+}

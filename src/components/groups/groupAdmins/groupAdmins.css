@@ -1,0 +1,61 @@
+.groupAdmins {
+  position: absolute;
+  border-radius: 7px;
+  box-shadow: 0 1px 6px -2px #0005;
+  padding: 5px 15px;
+  left: 18%;
+  margin-top: 10px;
+  font-size: 15px;
+  max-width: 68%;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 575px) {
+  .groupAdmins {
+    width: 235px;
+    height: 45px;
+    background: #0000;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2px 0px;
+    margin: 25px 40px;
+    overflow: auto;
+  }
+}
+
+.groupAdmins::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+.groupAdmins::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
+}
+.groupAdmins::-webkit-scrollbar-thumb {
+  background-color: #219653; /* color of the scroll thumb */
+  border-radius: 2px; /* roundness of the scroll thumb */
+  border: 1px solid #219653; /* creates padding around scroll thumb */
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupAdmins {
+    box-shadow: none;
+    justify-content: flex-end;
+    top: 30px;
+  }
+}
+
+.groupAdmins .groupAdminsText {
+  color: #3880ff !important;
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
+.groupAdminsIcon {
+  display: inline-block;
+  width: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}

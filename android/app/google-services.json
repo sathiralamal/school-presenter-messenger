@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "626043306361",
+    "project_id": "scholar-present",
+    "storage_bucket": "scholar-present.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626043306361:android:d3f3151afdd42362bbafa8",
+        "android_client_info": {
+          "package_name": "iconnect99.message.scholarpresent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626043306361-hlnk19jsefn6da7ttcdbgmf3rtktguhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDJHcEFGlekrIzuiVbmOL-wUaX4aDAZYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626043306361-hlnk19jsefn6da7ttcdbgmf3rtktguhu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "626043306361-7eaj8upd5herb725pis8rk8im7ctcdvr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iconnect99.message.scholarpresent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+.reply-notifications {
+    margin-top: 10px;
+    max-height: calc(100vh - 70px);
+    height: 100vh;
+}
+.reply-notifications .header-block {
+    padding: 20px 15px;
+    margin-bottom: 10px;
+}
+.reply-notifications .header-block * {
+    color: #219653 !important;
+}
+.reply-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.reply-message .user-block {
+    display: flex;
+    align-items: center;
+   
+}
+.reply-message-content .title {
+    color: #777;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.reply-message-content .title .rs-icon {
+    margin-right: 10px
+}
+.reply-message .content-block {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.reply-message {
+    display: flex;
+    align-items: center;
+}
+.reply-message .name {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.reply-message .message {
+    color: #219653;
+    font-size: 12px;
+}
+.reply-message .role-name {
+    color: #777;
+    font-size: 9px;
+}
+.replylist {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.reply-notifications .message-content-block {
+    padding: 0;
+    height: calc(100vh - 370px);
+}
+
+@media all and (max-width: 992px) {
+    .reply-message {
+        flex-direction: column;
+    }
+    .reply-message .user-block {
+        width: 100%;
+    }
+    .reply-message-content {
+        width: 100%;
+    }
+}

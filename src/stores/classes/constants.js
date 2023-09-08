@@ -1,0 +1,2 @@
+export const CLASSES_LOADING = "CLASSES_LOADING";
+export const CLASSES_SET_DATA = "CLASSES_SET_DATA";

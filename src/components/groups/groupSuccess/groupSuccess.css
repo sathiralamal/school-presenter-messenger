@@ -1,0 +1,39 @@
+.groupSuccess {
+  /* position: absolute; */
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  border-radius: 5px;
+  /* top: 0; */
+  /* left: 30%; */
+  width: 500px;
+  padding: 20px 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupSuccess {
+    width: 95vw;
+    z-index: 99999;
+    /* left: 2.5%;
+    top: 116px; */
+  }
+}
+
+.groupSuccessHead {
+  color: #219653;
+  font-size: 21px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupSuccessHead {
+    font-size: 18px;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}

@@ -1,0 +1,181 @@
+.NewLearner {
+    position: fixed;
+    z-index: 99999;
+    background-color: #fff;
+    box-shadow: 0 1px 7px #ccc;
+    top: 200px;
+    left: 30%;
+    flex-direction: column;
+    width: 550px;
+    max-height: 605px;
+    overflow-y: auto;
+}
+.NewLearner .outlineBtn{
+    border-radius: 7px;
+    --border-radius: 7px;
+}
+.PopupInputPicker .rs-picker-toggle-caret {
+    color: #219653;
+}
+
+@media only Screen and (max-width: 500px) {
+    .NewLearner {
+        width: 100vw;
+        margin: auto;
+        left: 0px;
+        
+        top: 120px;
+        max-height: 525px;
+    }
+}
+
+.PopupHeader {
+    color: #219653 !important;
+    font-size: 16px;
+    border-bottom: 1px solid #21965311;
+    font-weight: medium;
+    display: flex;
+    margin: 0 !important;
+    padding: 5px 10px 10px 10px !important;
+}
+
+@media only Screen and (max-width: 500px) {
+    .PopupHeader {
+        font-size: 17px;
+    }
+}
+
+.PopupHeader.devider {
+    padding: 10px;
+    border-top: 2px solid #219653;
+    border-bottom: 2px solid #21965325;
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.PopupInputPicker.rs-picker-toggle-wrapper {
+    width: 95%;
+    overflow: hidden;
+}
+
+.PopupLable {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 2px;
+    color: #0006;
+}
+
+@media only Screen and (max-width: 500px) {
+    .PopupLable {
+        display: none;
+    }
+}
+
+.PopupInputPicker.rs-picker-default .rs-picker-toggle.rs-btn {
+    background-color: #fff !important;
+    color: #219653 !important;
+}
+
+.PopupInputPicker .rs-picker-toggle .rs-picker-toggle-placeholder {
+    color: #219653 !important;
+}
+
+.btn-green-popup {
+    color: #fff;
+    font-size: 0.7rem;
+    --background: #219653;
+    --padding: 0px 5px;
+    --border-radius: 0 0.25rem 0.25rem 0;
+    margin: 0;
+    vertical-align: top;
+    height: 40px;
+    height: 27px !important;
+    margin: 4px;
+    border-radius: 3px !important;
+    overflow: hidden;
+}
+
+.btn-red-popup {
+    background: #FF0000 !important;
+  }
+
+.devider {
+    padding: 15px 0 0;
+    margin: 10px 0;
+    border-top: 1px solid #219653;
+}
+
+@media only Screen and (max-width: 500px) {
+    .LearnerSelect {
+        position: relative;
+        top: auto;
+    }
+
+    .LearnerPhoneEmail {
+        position: relative;
+        bottom: auto;
+    }
+}
+
+.learner-tab-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px green;
+    padding-bottom: 15px;
+}
+.learner-tab-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50px;
+    margin: 0 10px;
+    min-height: 30px !important;
+}
+
+.learner-tab-label {
+    display: flex;
+}
+
+.learner-tab-label > p {
+    text-transform: none;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #219653;
+}
+
+.tab-header-icon {
+    padding: 10px 20px;
+}
+
+.learner-close-icon {
+    position: absolute;
+    right: 0;
+}
+
+.learner-select-container {
+    display: flex;
+}
+
+.learner-select {
+    width: 100%;
+}
+
+.learner-button-container {
+    padding: 15px 0 0;
+    margin: 10px 0;
+    border-top: 1px solid #219653;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.learner-submit-button {
+    --box-shadow: none;
+    margin-left: 10px;
+}
+
+.learner-header-icon{
+    color: "#219653";
+}

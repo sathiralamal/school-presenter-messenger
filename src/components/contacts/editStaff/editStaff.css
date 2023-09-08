@@ -1,0 +1,136 @@
+.NewStaff {
+  position: fixed;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  top: 200px;
+  left: 30%;
+  flex-direction: column;
+  width: 550px;
+  overflow: auto;
+}
+.customRadioGroupWrapper{
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+@media only Screen and (max-width: 500px) {
+  .NewStaff {
+    width: 98vw;
+    left: 4px;
+    top: 105px;
+    max-height: 80vh;
+  }
+}
+
+@media only Screen and (max-width: 500px) {
+  .StaffRole {
+    position: relative;
+    top: 92px;
+  }
+
+  .StaffPhoneEmail {
+    position: relative;
+    bottom: 45px;
+  }
+}
+
+.PopupLable {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 2px;
+  color: #0006;
+}
+
+.PopupInputPicker .rs-picker-toggle-caret {
+  color: #219653;
+}
+
+.PopupInputPicker.rs-picker-toggle-wrapper {
+  width: 95%;
+  overflow: hidden;
+}
+
+@media only Screen and (max-width: 500px) {
+  .PopupInputPicker.rs-picker-toggle-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.PopupInputPicker.rs-picker-default .rs-picker-toggle.rs-btn {
+  background-color: #219653 !important;
+  color: #fff !important;
+}
+
+.PopupInputPicker .rs-picker-toggle .rs-picker-toggle-placeholder {
+  color: #fff !important;
+}
+
+.StaffGradeWrapper {
+  margin: 5px;
+  width: 200px;
+  border: 1px solid #ddd;
+  box-shadow: none !important;
+}
+
+.StaffGradeWrapper .selectGroup {
+  padding: 7px 10px;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+  background-color: #219653;
+  font-size: 14px;
+  color: #fff;
+}
+
+.StaffGradeWrapper .searchGroup {
+  width: 90%;
+  padding: 0;
+  padding-right: 5px;
+}
+
+.StaffSelectGradeText {
+  flex-direction: column;
+  margin: 20px 5px;
+}
+
+.StaffSelectGradeText * {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #bf0000 !important;
+}
+
+.btn-Grade {
+  color: #219653;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.btn-green-popup {
+  color: #fff;
+  font-size: 0.7rem;
+  --background: #219653;
+  --padding: 0px 5px;
+  --border-radius: 0 0.25rem 0.25rem 0;
+  margin: 0;
+  vertical-align: top;
+  height: 40px;
+  height: 27px !important;
+  margin: 4px;
+  border-radius: 3px !important;
+  overflow: hidden;
+}
+
+.btn-red-popup {
+  background: #FF0000 !important;
+}
+.devider {
+  padding: 15px 0 0;
+  margin: 10px 0;
+  border-top: 1px solid #219653;
+}
+
+.selectGroup .selectGroupText {
+  color: #fff !important;
+}

@@ -1,0 +1,2 @@
+export const GRADES_LOADING = "GRADES_LOADING";
+export const GRADES_SET_DATA = "GRADES_SET_DATA";

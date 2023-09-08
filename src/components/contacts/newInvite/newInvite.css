@@ -1,0 +1,29 @@
+.newInvite {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  border-radius: 5px;
+  top: 60px;
+  left: 30%;
+  width: 420px;
+  padding: 20px 0;
+}
+
+@media only Screen and (max-width: 500px) {
+  .newInvite {
+    width: 90vw;
+    left: 0;
+  }
+}
+
+.inviteCascader {
+  min-width: 365px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .inviteCascader {
+    width:70vw;
+    min-width:70vw;
+  }
+}

@@ -1,0 +1,256 @@
+.UploadModal {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  top: 60px;
+  left: 30%;
+  flex-direction: column;
+  width: 600px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .UploadModal {
+    width: 340px;
+    left: 50%;
+    top: -48px;
+    transform: translateX(-50%);
+  }
+}
+
+@media only Screen and (max-width: 500px) {
+  .UploadModalUploader {
+    display: none;
+  }
+}
+
+.UploadModalClose {
+  margin-left: auto;
+}
+
+@media only Screen and (max-width: 500px) {
+  .UploadModalClose {
+    margin-right: 20px;
+    margin-left: 0;
+    position: absolute;
+    right: -20px;
+    top: 15px;
+  }
+
+  .upload_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    border-bottom: 1px solid #0001;
+    margin-bottom: 20px;
+  }
+
+  .PopupHeader {
+    margin: 0px 0 0px;
+  }
+}
+
+.PopupLable {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 2px;
+  color: #0006;
+}
+
+.PopupInputPicker.rs-picker-default .rs-picker-toggle.rs-btn {
+  background-color: #219653 !important;
+  color: #fff !important;
+}
+
+.PopupInputPicker .rs-picker-toggle .rs-picker-toggle-placeholder {
+  color: #fff !important;
+}
+
+.btn-green-popup {
+  color: #fff;
+  font-size: 0.7rem;
+  --background: #219653;
+  --padding: 0px 5px;
+  --border-radius: 0 0.25rem 0.25rem 0;
+  margin: 0;
+  vertical-align: top;
+  height: 40px;
+  height: 27px !important;
+  margin: 4px;
+  border-radius: 3px !important;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.btn-red-popup {
+  background: #FF0000 !important;
+}
+
+.devider {
+  padding: 15px 0 0;
+  margin: 10px 0;
+  border-top: 1px solid #219653;
+}
+.devider-light {
+  padding: 15px 0 0;
+  margin: 10px 0;
+  border-top: 1px solid #eee;
+}
+.rs-uploader-trigger-btn {
+  width: 250px;
+  height: 250px;
+}
+
+.uploaderText {
+  font-size: 16px;
+  font-weight: bold;
+  color: #219653 !important;
+}
+
+.uploader_icon {
+  width: 50px;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.UploadModalBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only Screen and (max-width: 500px) {
+  .UploadModalBtn {
+    position: relative;
+    left: 125px;
+    bottom: 20px;
+  }
+
+  .UploadModalBody {
+    margin-top: -65px;
+  }
+
+  .UploadModalBody .rs-flex-box-grid {
+    margin-left: 4px;
+  }
+}
+
+.UploadModalBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploader_img {
+  width: 92px !important;
+  height: 96px !important;
+  margin-left: -60px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.uploadingText {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1492e6 !important;
+}
+
+.uploader_text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #219653 !important;
+  margin-top: 30%;
+}
+
+.uploader_Text_Progress {
+  font-size: 14px;
+  font-weight: bold;
+  color: #219653 !important;
+  text-align: left;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.marginHZ {
+  margin-left: 15%;
+}
+
+.endFlexRow {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+.UploadModalFooter .rs-flex-box-grid-item {
+  margin-left: auto;
+}
+
+@media only Screen and (max-width: 500px) {
+  .UploadModalFooter .rs-flex-box-grid-item {
+    margin-right: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn-green-upload {
+  color: #fff;
+  font-size: 0.7rem;
+  background: #219653;
+  padding: 0px 5px;
+  border-radius: 0 0.25rem 0.25rem 0;
+  margin: 0;
+  vertical-align: top;
+  height: 40px;
+  height: 27px !important;
+  margin: 4px;
+  border-radius: 3px !important;
+  overflow: hidden;
+  margin-left: 8%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.uploader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 65px;
+  border: 1px dashed #0005;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  .mw-100 {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -20px;
+    margin-bottom: 0;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+
+  .uploader {
+    display: none;
+  }
+
+  .btn-green-upload {
+    font-size: 14px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -86px -13px;
+    position: absolute;
+    top: -5px;
+    left: 0.5rem;
+  }
+}

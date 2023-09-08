@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "iconnect99.message.scholarpresent",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 34,
+      "versionName": "2.2",
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.contact-right{
+  position: relative;
+}
+.contactSegment {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contactSegmentBtn {
+    --background: #0000;
+}
+
+.contactSegmentLable {
+    text-transform: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.conHead {
+    text-align: center;
+}
+
+.conHead .head {
+    border-bottom: 1px solid #219653;
+}
+
+.conHead .invite {
+    /* color: #fff;
+  background-color: #000; */
+    margin-left: 10px;
+    padding: 5px;
+    border-left: 1px solid #219653;
+}
+
+.aboveTable {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px;
+    color: #219653;
+    position: relative;
+    /* overflow: visible; */
+}
+
+@media only Screen and (max-width: 500px) {
+    .aboveTable {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.aboveTable .left {
+    height: fit-content;
+    border: 1px solid #219653;
+    border-radius: 0.25rem;
+    --padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only Screen and (max-width: 575px) {
+    .aboveTable .left {
+        width: 100%;
+    }
+}
+
+.divider {
+    width: 1px;
+    height: 45px;
+    background-color: #219653;
+}
+
+.aboveTableSelect {
+    padding: 7.5px 2px 0 0;
+    border: none;
+    /* border-right: 1px solid #219653; */
+    /* border-radius: 0.25rem 0 0 0.25rem; */
+    /* height: 40px; */
+    width: 150px;
+    /* height: 28px; */
+    margin-top: -37px;
+    margin-right: 5px;
+}
+
+.aboveTableSelect option {
+    color: #000;
+}
+
+.aboveTable .left input {
+    border: none;
+    padding: 7.5px;
+    color: #219653 !important;
+    height: 40px;
+}
+
+.aboveTable .left input::placeholder {
+    color: #219653 !important;
+}
+
+.aboveTable .left input:focus-visible {
+    outline: none;
+}
+
+@media only Screen and (max-width: 500px) {
+    .aboveTableSelect {
+        width: 145px;
+    }
+
+    .aboveTable .left input {
+        width: 142px;
+        padding-left: 1px;
+    }
+}
+
+@media only Screen and (max-width: 400px) {
+    .aboveTableSelect {
+        width: 111px;
+    }
+
+    .aboveTable .left input {
+        width: 136px;
+    }
+}
+
+.aboveTable .contact-right {
+    /* margin-left: 10%; */
+    position: relative;
+    /* overflow: visible; */
+}
+
+.conTable table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.conTable table thead {
+    box-shadow: 0 5px 10px #dedede;
+}
+
+.conTable table th {
+    color: #219653;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #bbb;
+}
+
+.conTable table td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    border-top: 1px solid #bbb;
+    width: fit-content;
+}
+
+.conTable table th,
+.conTable table td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.conTable table th:first-child,
+.conTable table td:first-child {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.conTable table tbody {
+    border-bottom: 1px solid #bbb;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.1rem 2rem;
+    border-radius: 0.25rem;
+    border-color: #219653;
+    margin: 0 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.outlineBtn {
+    --border-width: 1px;
+    --border-color: #219653;
+    text-transform: none;
+    font-size: 12px !important;
+}
+
+.btn-green {
+    color: #fff;
+    font-size: 0.7rem;
+    --background: #219653;
+    --padding: 5px;
+    --border-radius: 0 0.25rem 0.25rem 0;
+    margin: 0;
+    vertical-align: top;
+    height: 45px;
+}
+
+.btn-1st {
+    margin-right: 0;
+    --border-radius: 0.25rem 0 0 0.25rem;
+    height: 40px;
+}
+
+.btn-2nd {
+    margin-left: 0;
+    --border-radius: 0 0.25rem 0.25rem 0;
+    height: 40px;
+}
+
+.btn-right {
+    color: #219653;
+    font-size: 15px;
+    height: 40px;
+}
+
+@media only Screen and (max-width: 500px) {
+    .btn-right {
+        width: calc(50vw - 16px);
+    }
+
+    .hide-mob {
+        display: none;
+    }
+
+    .contact-right {
+        display: flex;
+    }
+
+    .search-input {
+        margin-left: 10px;
+    }
+}
+
+@media only Screen and (max-width: 500px) {
+    .btn-invite {
+        width: calc(100vw - 30px);
+    }
+}
+
+.fixed-top-Bar {
+    z-index: 10;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid #0002;
+    -webkit-text-fill-color: #222;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+select {
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #219653;
+    border: none !important;
+    color: #fff;
+    /* margin: 10px; */
+}
+
+select:hover,
+select:active,
+select:focus {
+    border: none !important;
+}
+
+.rs-picker-toggle-wrapper .rs-picker-toggle.rs-btn {
+    padding-right: 10px;
+}
+
+.column-mapping {
+    background-color: #219653;
+    height: 50px;
+    
+}

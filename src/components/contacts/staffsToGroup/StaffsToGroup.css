@@ -1,0 +1,215 @@
+.StaffsToGroup {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  top: 60px;
+  left: 30%;
+  flex-direction: column;
+  width: 500px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .StaffsToGroup {
+    width: 98vw;
+    left: -11px;
+    top: -62px;
+  }
+}
+
+.PopupLable {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 2px;
+  color: #0006;
+}
+
+.PopupInputPicker.rs-picker-default .rs-picker-toggle.rs-btn {
+  background-color: #219653 !important;
+  color: #fff !important;
+}
+
+.PopupInputPicker .rs-picker-toggle .rs-picker-toggle-placeholder {
+  color: #fff !important;
+}
+
+.btn-green-popup {
+  color: #fff;
+  font-size: 0.7rem;
+  --background: #219653;
+  --padding: 0px 5px;
+  --border-radius: 0 0.25rem 0.25rem 0;
+  margin: 0;
+  vertical-align: top;
+  height: 40px;
+  height: 27px !important;
+  margin: 4px;
+  border-radius: 3px !important;
+  overflow: hidden;
+}
+
+.btn-red-popup {
+  background: #FF0000 !important;
+}
+
+.devider {
+  padding: 15px 0 0;
+  margin: 10px 0;
+  border-top: 1px solid #219653;
+}
+
+.rs-uploader-trigger-btn {
+  width: 250px;
+  height: 250px;
+}
+
+.uploaderText {
+  font-size: 16px;
+  font-weight: bold;
+  color: #219653;
+}
+
+.uploader_icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.uploader_img {
+  width: 130px;
+  height: 130px;
+  margin-left: -60px;
+  object-fit: cover;
+}
+
+.uploadingText {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00f;
+}
+
+.uploader_text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #219653;
+  margin-top: 30%;
+}
+
+.uploader_Text_Progress {
+  font-size: 14px;
+  font-weight: bold;
+  color: #219653;
+  text-align: left;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.marginHZ {
+  margin-left: 15%;
+}
+
+.selectGroup {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0px 1px 4px #0005;
+}
+
+.selectGroupWrapper {
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0px 1px 4px #0005;
+  padding: 0px;
+}
+
+.selectGroupWrapper ion-col {
+  padding: 0px;
+}
+
+.linkGroup {
+  cursor: pointer;
+  color: #219653 !important;
+}
+
+.Popcheckbox {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Popcheckbox:hover {
+  background-color: #f1f5f9;
+}
+
+@media only Screen and (max-width: 500px) {
+  .Popcheckbox {
+    padding: 10px 8px;
+  }
+}
+
+.Popcheckbox ion-checkbox {
+  margin: 0;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .Popcheckbox ion-checkbox {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .Popcheckbox ion-label {
+    font-size: 13px !important;
+  }
+}
+
+.searchGroup {
+  width: 95%;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0px 1px 4px #0005;
+  margin: 0px auto 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.searchGroupBorder {
+  border: 0px solid #000;
+  display: flex;
+  flex: 1;
+}
+
+.linkGroup {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+  color: #219653;
+  padding-right: 40px;
+}
+
+::slotted([slot="start"]) {
+  margin-right: unset;
+  margin-inline-end: 10px;
+}
+
+.PopcheckboxToggler {
+  padding: 5px 8px 27px;
+}
+
+.rs-btn-toggle {
+  background: #219653 !important;
+}
+
+.rs-btn-toggle-checked {
+  background: #3498ff !important;
+}

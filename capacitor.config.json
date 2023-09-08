@@ -1,0 +1,18 @@
+{
+    "appId": "iconnect99.message.scholarpresent",
+    "appName": "Scholar Present",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "plugins": {
+        "SplashScreen": {
+            "launchAutoHide": false,
+            "androidScaleType": "CENTER_CROP"
+        },
+        "PushNotifications": {
+            "presentationOptions": ["badge", "sound", "alert"]
+          }
+    },
+    "cordova": {},
+    "hideLogs": false
+}

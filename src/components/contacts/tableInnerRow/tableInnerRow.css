@@ -1,0 +1,20 @@
+.table-inner-body {
+  color: #219653bb;
+  border-left: 4px solid #219653;
+}
+
+@media only screen and (max-width: 575px) {
+  .table-inner-body {
+    color: #219653bb;
+    border-left: 0px solid #219653;
+  }
+}
+
+.fadedText {
+  opacity: 0.5;
+}
+
+.tableTnnerDistributed {
+  display: block;
+  color: #219653 !important;
+}

@@ -1,0 +1,26 @@
+.AddLearnerToGroup {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  top: 60px;
+  left: 35%;
+  flex-direction: column;
+  width: 400px;
+}
+
+.LearnerToGroupHead {
+  color: #219653 !important;
+  font-size: 21px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .AddLearnerToGroup {
+    width: 90vw;
+    left: 0;
+  }
+
+  .LearnerToGroupHead {
+    font-size: 17px;
+  }
+}

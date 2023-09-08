@@ -1,0 +1,15 @@
+.notification-popup .texture{
+    font-size: 14px;
+    color: #777;
+}
+.notification-popup .label{
+    margin: 7px 0;
+    font-size: 12px;
+    color: #219653;
+}
+.notification-popup .rs-icon{
+    margin-right: 5px;
+}
+.notification-popup .rs-btn{
+    float: right;
+}

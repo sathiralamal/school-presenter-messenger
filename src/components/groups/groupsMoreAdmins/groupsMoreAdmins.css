@@ -1,0 +1,114 @@
+.groupsMoreAdmins {
+  border-radius: 7px;
+  border: 1px solid #219653;
+  padding: 30px 15px 10px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  /* position: relative; */
+  overflow: visible;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupsMoreAdmins {
+    box-shadow: none;
+    /* border-top: 1px solid #21965377; */
+    border: none;
+    border-radius: 0 0 7px 7px;
+    padding: 5px;
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.groupsMoreAdminsInner {
+  flex-direction: column;
+  border: 1px solid #888;
+  border-radius: 7px;
+  margin: 7px;
+  padding: 7px;
+  /* position: relative; */
+}
+
+
+.groupsMoreAdminsInnerSelected {
+  flex-direction: column;
+  border: 2px solid #219653;
+  background-color: #5cf09c49;
+  border-radius: 7px;
+  margin: 7px;
+  padding: 7px;
+  /* position: relative; */
+}
+
+
+
+@media only Screen and (max-width: 500px) {
+  .groupsMoreAdminsInner {
+    padding: 5px;
+    margin: 4px;
+  }
+}
+
+.groupsMoreAdminsInner * {
+  color: #888;
+}
+
+@media only Screen and (max-width: 500px) {
+  .groupsMoreAdminsInner * {
+    font-size: 12px;
+  }
+}
+
+/* DOES NOT WORK - not specific enough */
+.popover-content {
+  background: #222;
+}
+
+/* Works - pass "my-custom-class" in cssClass to increase specificity */
+.my-custom-class .popover-content {
+  background: #222;
+}
+
+.popoverMenuItem {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid #2222;
+  cursor: pointer;
+}
+
+.popoverMenuItem:hover {
+  background-color: #fafafa;
+}
+
+.colMapRow .rs-input {
+  display: inline-block;
+  width: 175px;
+}
+
+.otp-container{
+  display: flex ;
+  align-items: center ;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+.otp-input{
+  border: none;
+  border-bottom: solid 1px rgb(179, 179, 179);
+  font-size: 16px;
+  margin: 0px 5px;
+  width: 30px !important;
+}
+
+.otp-input-focus{
+  outline: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .colMapRow .rs-input {
+    display: inline-block;
+    width: 110px;
+  }
+}

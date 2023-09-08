@@ -1,0 +1,147 @@
+import { FCM } from "@capacitor-community/fcm";
+import { Capacitor } from "@capacitor/core";
+import { PushNotifications } from "@capacitor/push-notifications";
+import * as integration from "scholarpresent-integration";
+import { useEffect, useState } from "react";
+import { useHistory, useLocation } from "react-router-dom";
+//import registerServiceWorker from "../ServiceWorker";
+import { Storage } from "@ionic/storage";
+import { CACHE_USER_LOGIN_ID,CACHE_USER_LOGIN_ROLE_NAME, SAFARI_DISABLE_NOTIFICATION, TENANT_ID } from "../utils/StorageUtil";
+import { useIonAlert } from "@ionic/react";
+
+
+export default function useHandleNotification() {
+
+    const [lastNativeNotification, setLastNativeNotification] = useState<any>();
+    const [lastWebNotification, setLastWebNotification] = useState<any>();
+    const location = useLocation();
+    const history = useHistory();
+    const [tenantId, setTenantId] = useState("");
+    const [cacheUserId, setCacheUserId] = useState("");
+    const [safariDisableNotification, setSafariDisableNotification] = useState<undefined | boolean>();
+    const [present] = useIonAlert();
+    const store = new Storage();
+
+        console.log("useHandleNotidication tenantId ", tenantId, " cacheUserId ", cacheUserId, " Capacitor.isNativePlatform() ", Capacitor.isNativePlatform())
+
+        if (!tenantId || !cacheUserId || !Capacitor.isNativePlatform()) {
+            console.log("useHandleNotidication returning");
+            return;
+        }
+
+        (async function handle() {
+            const requestResult = await PushNotifications.requestPermissions();
+            if (requestResult.receive !== "granted") {
+                return;
+            }
+            // Register with Apple / Google to receive push via APNS/FCM
+            PushNotifications.register();
+
+            // On succcess, we should be able to receive notifications
+            PushNotifications.addListener("registration", async (token: any) => {
+                console.warn(`[useHandleNotification.ts] Token reretrived 1: ${token?.value}`);
+                let tokenStr: string;
+
+                // on iOS, need extra step to get token
+                if (Capacitor.getPlatform() === "ios") {
+                    tokenStr = await FCM.getToken().then((r) => r.token);
+                } else {
+                    // on android, don't need
+                    tokenStr = token.value;
+                }
+
+                console.warn("[useHandleNotification.ts] Token reretrived 2: ", tokenStr);
+                let contacts = [
+                    {
+                        contactType: "app",
+                        detail: tokenStr,
+                    },
+                ];
+                store.create().then(value=>{
+                    store.set("pushNotificationKey", tokenStr).then(res=>{});
+                });
+
+                integration.updateUserContactsInfo(cacheUserId, tenantId, contacts).then((resUser: any) => {
+                    console.warn("resUser ", resUser);
+                    //alert('resUser: ' + resUser);
+                });
+
+                //alert('Push registration success, token: ' + token.value);
+            });
+
+            // Some issue with your setup and push will not work
+            PushNotifications.addListener("registrationError", (error: any) => {
+                console.error("[useHandleNotification.ts] Error on registration: " + JSON.stringify(error));
+            });
+
+            // Show us the notification payload if the app is open on our device
+            PushNotifications.addListener("pushNotificationReceived", (notification: any) => {
+                console.warn("[useHandleNotification.ts] pushNotificationReceived ", JSON.stringify(notification));
+                setLastNativeNotification(notification);
+
+                //const createdBy = JSON.parse(notification.data.createdByUser);
+
+                // if (
+                //     window.confirm(
+                //         `You have new message from ${createdBy.firstName} ${createdBy.lastName}: ${notification.body}`
+                //     )
+                // ) {
+                //     history.push("/messaging/" + notification.data.conversationId);
+                // }
+            });
+
+            // Method called when tapping on a notification
+            PushNotifications.addListener("pushNotificationActionPerformed", async(notification: any) => {
+                console.log(
+                    "[useHandleNotification.ts] tapping on a notification entered ")
+                console.warn(
+                    "[useHandleNotification.ts] tapping pushNotificationActionPerformed ",
+                    JSON.stringify(notification)
+                );
+                let newTappedNotification = {
+                    ...notification.notification
+                }
+                if(notification?.actionId) {
+                    newTappedNotification.actionId = notification.actionId;
+                }
+                if(location?.pathname!="messaging"){
+                    const store = new Storage();
+                    await store.create();
+                    let roleName = await store.get(CACHE_USER_LOGIN_ROLE_NAME);
+                    console.log(
+                                    "[useHandleNotification.ts] roleName ", roleName);
+                                if(roleName ==="Student" || roleName ==="Parent"){
+                                    history.push("/lmessaging" , {"conversationId":notification?.notification?.data?.conversationId, 
+                                    "messageId" : notification?.notification?.data?.id, "data" :notification?.notification?.data   });
+                                }else{
+                                    history.push("/messaging" , {"conversationId":notification?.notification?.data?.conversationId, 
+                                    "messageId" : notification?.notification?.data?.id,
+                                     "data" :notification?.notification?.data });
+                                }
+                } else{
+                    setLastNativeNotification(newTappedNotification);
+                }
+
+                // const store = new Storage();
+                // store.create().then(value=>{
+                //     store.get(CACHE_USER_LOGIN_ROLE_NAME).then(roleName=>{
+                //         console.log(
+                //             "[useHandleNotification.ts] roleName ", roleName);
+                //         if(roleName ==="Student" || roleName ==="Parent"){
+                //             history.push("/lmessaging" , {"conversationId":notification?.notification?.data?.conversationId, 
+                //             "messageId" : notification?.notification?.data?.id, "data" :notification?.notification?.data   });
+                //         }else{
+                //             history.push("/messaging" , {"conversationId":notification?.notification?.data?.conversationId, 
+                //             "messageId" : notification?.notification?.data?.id,
+                //              "data" :notification?.notification?.data });
+                //         }
+                //     })
+                // })
+
+            });
+        })();
+
+        return () => {
+            PushNotifications.removeAllListeners();
+        };
+    }

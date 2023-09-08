@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+}
+#background-content {
+  background-color: #fff;
+  color: #333;
+}
+.rs-icon.fill-color use {
+  fill: #219653;
+}
+
+.my-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.my-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+.my-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: #ccc;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  background-color: #ff0 !important;
+  color: #222 !important;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent;
+}
+
+input:-webkit-autofill:first-line {
+  color: #797979;
+}
+
+.popover-viewport ion-list.list-md.md.hydrated {
+  background-color: #fff !important;
+  /* --background: #fff !important; */
+}
+
+ion-item {
+  color: #222;
+}
+
+.rs-btn-toggle-inner {
+  background-color: #fff;
+}
+

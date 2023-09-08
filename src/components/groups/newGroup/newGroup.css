@@ -1,0 +1,71 @@
+.newGroup {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  border-radius: 5px;
+  top: 60px;
+  left: 35%;
+  width: 400px;
+  padding: 20px 0;
+}
+
+@media only Screen and (max-width: 500px) {
+  .newGroup {
+    width: 98vw;
+    left: 4px;
+    top: -10px;
+  }
+}
+
+.newGroupHead {
+  color: #219653 !important;
+  margin: 0 auto;
+  font-size: 21px;
+}
+
+.groupModalInput {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: #eee; */
+  padding: 10px 10px 3px;
+  border-bottom: 2px solid #219653;
+}
+
+.groupModalInputInner {
+  flex-direction: column;
+}
+
+.groupModalInputInner ion-text {
+  color: #219653 !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.groupModalInputInner .rs-input {
+  width: 320px;
+  background-color: #0000;
+  /* margin-left: -10px; */
+  border: none;
+}
+
+.groupModalInputInner .rs-picker-cascader {
+  display: block;
+  width: 200px;
+}
+
+.groupModalInputInner .rs-picker-cascader .rs-picker-toggle:hover {
+  border-color: #219653;
+}
+
+.groupModalInputInner .rs-picker-cascader .rs-picker-toggle span {
+  color: #219653;
+}
+
+.rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input,
+.rs-picker-menu .rs-picker-search-bar .rs-picker-search-bar-input::placeholder {
+  color: #219653;
+  /* border-color: #219653; */
+}

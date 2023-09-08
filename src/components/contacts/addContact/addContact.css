@@ -1,0 +1,25 @@
+.addContact {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  top: 50px;
+  left: 93px;
+  flex-direction: column;
+  width: 180px;
+  padding: 10px 0;
+}
+
+@media only Screen and (max-width: 500px) {
+  .addContact {
+    left: -5px;
+  }
+}
+
+.addContactText {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.sendInvitations2nd {
+  position: absolute;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #ccc;
+  border-radius: 5px;
+  top: 60px;
+  left: 30%;
+  width: 550px;
+  padding: 20px 0;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitations2nd {
+    width: 90vw;
+    left: 0;
+  }
+}
+
+.sendInvitations2ndImg {
+  display: none;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitations2ndImg {
+    display: block;
+  }
+}
+
+.sendInvitations2ndBodyHead {
+  margin: 0 70px;
+}
+
+.sendInvitations2ndBody {
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+  margin: 20px 70px;
+}
+
+@media only Screen and (max-width: 500px) {
+  .sendInvitations2ndBodyHead {
+    margin: 0 10px;
+  }
+
+  .sendInvitations2ndBody {
+    margin: 20px;
+  }
+}

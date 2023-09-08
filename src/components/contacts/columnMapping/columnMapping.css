@@ -1,0 +1,86 @@
+.columnMapping {
+    position: absolute;
+    z-index: 99999;
+    background-color: #fff;
+    box-shadow: 0 1px 7px #ccc;
+    border-radius: 5px;
+    top: 60px;
+    left: 35%;
+    width: 600px;
+    padding: 20px 0;
+}
+
+@media only Screen and (max-width: 575px) {
+    .columnMapping {
+        width: 100vw;
+        left: 50%;
+        transform: translate(-50%, -117px) !important;
+    }
+}
+
+.colMapRow {
+    width: 90%;
+    margin: 0 20px 10px;
+}
+
+.colMapRow .rs-input {
+    display: inline-block;
+    width: 115px;
+}
+
+.colMapRow .PopupInputPicker {
+    width: 145px;
+}
+
+.columnMappingHeader {
+    font-size: 14px;
+    margin: 15px 0px !important;
+    color: #219653 !important;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.columnMappingText {
+    font-size: 14px;
+    margin: 15px 0px !important;
+    color: #219653 !important;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.coll-1 {
+    width: 140px;
+}
+
+.coll-2 {
+    width: 160px;
+}
+
+.coll-3 {
+    width: 150px;
+}
+
+@media only screen and (max-width: 575px) {
+    .colMapRow {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .colMapRow .rs-input {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .coll-1 {
+        width: 40%;
+    }
+
+    .coll-2 {
+        width: 30%;
+    }
+
+    .coll-3 {
+        width: 30%;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "iconnect99.message.scholarpresent",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 11,
+      "versionName": "1.6",
+      "outputFile": "app-debug.apk"
+    }
+  ]
+}

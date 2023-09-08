@@ -1,0 +1,34 @@
+.multiCascader {
+    position: relative;
+    width: 100%;
+}
+.multiCascader-back-btn {
+    position: absolute;
+    top: 46px;
+    left: 11px;
+    color: #219653;
+    display: flex;
+    align-items: center;
+}
+.multiCascader-back-btn .rs-icon {
+    margin-right: 5px;
+}
+.multiCascader-back-btn span {
+    font-size: 16px;
+}
+.rs-picker-cascader-menu-column {
+    padding-top: 15px;
+}
+
+.new-message-btn > div {
+    width: 156px !important;
+    max-height: 200px !important;
+    overflow-y: hidden;
+}
+.new-message-btn > div .rs-picker-cascader-menu-column:not(:last-child) {
+    width: 0;
+}
+
+.remove-cascade-arrow > a > span:nth-child(2) {
+    display: none;
+}

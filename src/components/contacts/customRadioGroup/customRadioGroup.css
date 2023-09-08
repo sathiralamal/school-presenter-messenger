@@ -1,0 +1,9 @@
+.customRadioGroup--selected {
+    color: white;
+    background-color: #219653;
+}
+
+.customRadioGroup--selected.Popcheckbox:hover {
+    color: white;
+    background-color: #219653;
+}
